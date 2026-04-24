@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adrian Bedregal — Gameplay &amp; Engine Programmer | C++ | Unreal Engine</title>
+  <meta name="description" content="Adrian Bedregal — Gameplay &amp; Engine Programmer specialising in C++, Unreal Engine, and game systems architecture. 6+ years shipping indie/AA/AAA titles, 12+ years writing C++." />
+  <link rel="canonical" href="https://asulcons.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Adrian Bedregal" />
+  <meta property="og:title" content="Adrian Bedregal — Gameplay &amp; Engine Programmer" />
+  <meta property="og:description" content="C++ · Unreal Engine · Game Systems Architecture. 6+ years shipping indie/AA/AAA titles, 12+ years writing C++." />
+  <meta property="og:url" content="https://asulcons.github.io/" />
+  <meta property="og:image" content="https://asulcons.github.io/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Adrian Bedregal — Gameplay &amp; Engine Programmer" />
+  <meta name="twitter:description" content="C++ · Unreal Engine · Game Systems Architecture. 6+ years shipping indie/AA/AAA titles, 12+ years writing C++." />
+  <meta name="twitter:image" content="https://asulcons.github.io/og-image.png" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Adrian Bedregal",
+    "jobTitle": "Gameplay & Engine Programmer",
+    "url": "https://asulcons.github.io/",
+    "email": "mailto:adrian.r.bedregal@gmail.com",
+    "sameAs": [
+      "https://github.com/AsulconS",
+      "https://linkedin.com/in/adrian-bedregal"
+    ],
+    "knowsAbout": ["C++", "Unreal Engine", "Game Engine Architecture", "Computer Graphics", "Rendering"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Moquegua",
+      "addressCountry": "PE"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">AB<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#games">Games</a></li>
+        <li><a href="#case-studies">Case Studies</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="Adrian%20Bedregal%20-%20Resume.pdf" download="Adrian Bedregal - Resume.pdf" class="nav-cta">Resume ↓</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <canvas id="heroCanvas" aria-hidden="true" role="presentation"></canvas>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting mono">Hello, world. I'm</p>
+      <h1 class="hero-name">Adrian<br /><span class="accent">Bedregal</span></h1>
+      <div class="hero-roles">
+        <span class="role-badge">Software Engineer</span>
+        <span class="role-sep">/</span>
+        <span class="role-badge">C++ Specialist</span>
+        <span class="role-sep">/</span>
+        <span class="role-badge">Game Systems &amp; Architecture</span>
+      </div>
+      <p class="hero-tagline">
+        Building worlds from scratch — a custom engine, AAA collaborations, and graphics systems.
+        6+ years shipping indie/AA/AAA titles, 3.5+ years shipping commercial titles, 12+ years writing C++.
+      </p>
+      <div class="hero-cta">
+        <a href="#experience" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        <a href="Adrian%20Bedregal%20-%20Resume.pdf" download="Adrian Bedregal - Resume.pdf" class="btn btn-outline">Download Resume ↓</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">6+</span><span class="stat-label">Yrs Industry</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">3.5+</span><span class="stat-label">Yrs Commercial</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">2</span><span class="stat-label">AAA Titles</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">AA Titles</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">12yr</span><span class="stat-label">C++ Experience</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">10</span><span class="stat-label">Engineers Led</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span class="mono">scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <main id="main">
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Lead Programmer</h3>
+                <a href="https://www.applebombgames.com/" class="timeline-company accent">Applebomb Games</a>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date mono">May 2025 – Present</span>
+                <span class="timeline-loc">Remote · Arequipa, Peru</span>
+              </div>
+            </div>
+            <p class="timeline-project mono">Mark The Headless Chicken &nbsp;·&nbsp; C++ | Unreal Engine 5</p>
+            <ul class="timeline-bullets">
+              <li>Led a team of 5 engineers to deliver core gameplay systems and production features.</li>
+              <li>Created AI systems architecture, AI development tools, and Behaviour Trees for core AI-driven features.</li>
+              <li>Optimised gameplay and physics systems to maintain stable <strong>60 FPS</strong> frame budgets on target platforms.</li>
+              <li>Designed architecture for core gameplay systems, UI, physics systems, and game loop integration.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">UE5</span><span class="tag">C++</span><span class="tag">AI Systems</span><span class="tag">Behaviour Trees</span><span class="tag">Physics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" id="exp-globant">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Semi-Senior Advanced Game Developer (SSr Adv)</h3>
+                <a href="https://www.globant.com/studio/games" class="timeline-company accent">Globant &nbsp;·&nbsp; Epic Games</a>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date mono">May 2024 – Feb 2026</span>
+                <span class="timeline-loc">Remote · Arequipa, Peru</span>
+              </div>
+            </div>
+            <p class="timeline-project mono">1 AAA Shipped Title &amp; 1 AAA Unannounced Title &nbsp;·&nbsp; C++ | Unreal Engine 5</p>
+            <ul class="timeline-bullets">
+              <li>Redesigned UI architecture for two core features in <strong>Fortnite</strong> in collaboration with Epic Games.</li>
+              <li>Modified <strong>Unreal Engine 5 source code</strong> to optimise networking, rendering, and UI subsystems under real-time performance constraints.</li>
+              <li>Designed system architecture and built <strong>4 editor tools</strong> supporting quest systems, AI workflows, and tutorial pipelines, including backend sync and in-game elements for a japanese company's unannounced massive multiplayer game.</li>
+              <li>Contributed to early architecture and storage design of the inventory system, integrating AI systems and UI widgets.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">UE5 Source</span><span class="tag">Fortnite</span><span class="tag">Networking</span><span class="tag">Editor Tools</span><span class="tag">AI Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Engineer</h3>
+                <a href="https://www.bamtang.com/" class="timeline-company accent">Bamtang Games</a>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date mono">Oct 2022 – Apr 2024</span>
+                <span class="timeline-loc">Remote · Arequipa, Peru</span>
+              </div>
+            </div>
+            <p class="timeline-project mono">3 Shipped Titles &nbsp;·&nbsp; C++ | Unreal Engine 4/5</p>
+            <ul class="timeline-bullets">
+              <li>Developed core kart physics and gameplay systems for <strong>DreamWorks All-Star Kart Racing</strong>, shipped across PC and console platforms.</li>
+              <li>Implemented multiplayer kart replication with client prediction and interpolation supporting up to <strong>8 players</strong>.</li>
+              <li>Created design and automation tools to optimise workflow for game design, resulting in faster development cycles across multiple projects for a team of 4 designers, automating 2 games simultaneously.</li>
+              <li>Extended the game engine with a specialised module, API, and tools for kart physics: <strong>20% reduction in development time</strong>.</li>
+              <li>Built utility and debugging tools for tracking user traces to inform level design: <strong>40% level design time reduction</strong>.</li>
+              <li>Tuned AI behaviour for decisions and mechanics in single-player adversaries: <strong>20% difficulty increase</strong>.</li>
+              <li>Shipped menu systems and gameplay for <strong>Nickelodeon Kart Racers 3: Slime Speedway</strong>.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">UE4/5</span><span class="tag">Kart Physics</span><span class="tag">Networking</span><span class="tag">Replication</span><span class="tag">Dev Tools</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Volunteer Game Programmer &amp; Instructor (C++)</h3>
+                <span class="timeline-company accent">Saint Augustin National University</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date mono">Apr 2020 – Oct 2022</span>
+                <span class="timeline-loc">On-site · Arequipa, Peru</span>
+              </div>
+            </div>
+            <p class="timeline-project mono">C++ | Unreal Engine 4 | Curly Engine</p>
+            <ul class="timeline-bullets">
+              <li>Contributed to multiple internal projects focused on gamification and educational game development, implementing gameplay systems and core mechanics.</li>
+              <li>Led development of "Potato Smash" and a Volcano Simulation, designing and implementing features using C++ with Curly Engine and HSGIL.</li>
+              <li>Developed and maintained game logic, systems, and interactive features across projects, alongside independent freelance development work during the same period.</li>
+              <li>Mentored and trained groups of ~10 students in game development covering C++, custom engine tooling, and Unreal Engine 4.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">UE4</span><span class="tag">C++</span><span class="tag">Curly Engine</span><span class="tag">HSGIL</span><span class="tag">Mentoring</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GAMES -->
+  <section id="games" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Games I've <span class="accent">Worked On</span></h2>
+      <p class="section-sub">Commercial titles shipped alongside world-class studios — from kart racers to AAA live-service games.</p>
+      <!-- TODO: add cleared studio/publisher logos here once brand-usage guidelines are confirmed for each (Epic Games, DreamWorks, Nickelodeon, etc.) -->
+
+      <div class="games-shelf">
+
+        <!-- Fortnite -->
+        <a class="game-card reveal" href="#exp-globant">
+          <div class="game-cover game-cover--fortnite">
+            <div class="game-cover-overlay">
+              <span class="game-badge game-badge--contrib">Feature Contrib</span>
+            </div>
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">Fortnite</h3>
+            <p class="game-studio mono">Epic Games · via Globant</p>
+            <p class="game-role">UE5 source-level UI, rendering &amp; networking work on a live AAA title.</p>
+            <div class="tag-row">
+              <span class="tag tag--accent">UE5 Source</span>
+              <span class="tag">UI Arch</span>
+              <span class="tag">Networking</span>
+            </div>
+            <span class="game-link">See case study ↓</span>
+          </div>
+        </a>
+
+        <!-- Mark The Headless Chicken -->
+        <a class="game-card reveal" href="https://store.steampowered.com/app/3766700/Mark_The_Headless_Chicken/" target="_blank" rel="noopener">
+          <div class="game-cover" style="padding: 1rem; background: #1a1a1a;">
+            <img
+              src="mthc.jpg"
+              alt="Mark The Headless Chicken cover"
+              style="object-fit: contain;"
+              loading="lazy"
+            />
+            <div class="game-cover-overlay">
+              <span class="game-badge game-badge--demo-available">Demo Available</span>
+            </div>
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">Mark The Headless Chicken</h3>
+            <p class="game-studio mono">AppleBomb Games · Lead Programmer</p>
+            <p class="game-role">Led a team of 10. AI systems, physics optimised to stable 60 FPS, core game loop &amp; architecture.</p>
+            <div class="tag-row">
+              <span class="tag tag--accent">Lead</span>
+              <span class="tag">UE5</span>
+              <span class="tag">AI</span>
+              <span class="tag">Physics</span>
+            </div>
+            <span class="game-link">Steam ↗</span>
+          </div>
+        </a>
+
+        <!-- DreamWorks All Star Kart Racing -->
+        <a class="game-card reveal" href="#case-studies">
+          <div class="game-cover">
+            <img
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/2224740/library_600x900.jpg"
+              alt="DreamWorks All-Star Kart Racing cover"
+              onerror="this.parentElement.classList.add('game-cover--fallback')"
+              loading="lazy"
+            />
+            <div class="game-cover-overlay">
+              <span class="game-badge game-badge--shipped">Shipped</span>
+            </div>
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">DreamWorks All-Star Kart Racing</h3>
+            <p class="game-studio mono">Bamtang Games · Game Programmer</p>
+            <p class="game-role">Core kart physics, 8-player online replication, engine module, automation tools.</p>
+            <div class="tag-row">
+              <span class="tag tag--accent">Full Project</span>
+              <span class="tag">Physics</span>
+              <span class="tag">Networking</span>
+            </div>
+            <span class="game-link">See case study ↓</span>
+          </div>
+        </a>
+
+        <!-- Looney Tunes Wacky World of Sports -->
+        <a class="game-card reveal" href="https://store.steampowered.com/app/2330430/Looney_Tunes_Wacky_World_of_Sports/" target="_blank" rel="noopener">
+          <div class="game-cover">
+            <img
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/2330430/library_600x900.jpg"
+              alt="Looney Tunes: Wacky World of Sports cover"
+              onerror="this.parentElement.classList.add('game-cover--fallback')"
+              loading="lazy"
+            />
+            <div class="game-cover-overlay">
+              <span class="game-badge game-badge--shipped">Shipped</span>
+            </div>
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">Looney Tunes: Wacky World of Sports</h3>
+            <p class="game-studio mono">Bamtang Games · Game Programmer</p>
+            <p class="game-role">From early stages to pre-shipping. Contributed to audio engineering across development.</p>
+            <div class="tag-row">
+              <span class="tag tag--accent">Shipped</span>
+              <span class="tag">UE4/5</span>
+              <span class="tag">Audio Eng</span>
+            </div>
+            <span class="game-link">Steam ↗</span>
+          </div>
+        </a>
+
+        <!-- Nickelodeon Kart Racers 3 -->
+        <a class="game-card reveal" href="https://www.youtube.com/watch?v=wrwOEpXCAmw" target="_blank" rel="noopener">
+          <div class="game-cover">
+            <img
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/1620040/library_600x900.jpg"
+              alt="Nickelodeon Kart Racers 3: Slime Speedway cover"
+              onerror="this.parentElement.classList.add('game-cover--fallback')"
+              loading="lazy"
+            />
+            <div class="game-cover-overlay">
+              <span class="game-badge game-badge--shipped">Shipped</span>
+            </div>
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">Nickelodeon Kart Racers 3: Slime Speedway</h3>
+            <p class="game-studio mono">Bamtang Games · Game Programmer</p>
+            <p class="game-role">Joined at final stage — menu systems and gameplay programming.</p>
+            <div class="tag-row">
+              <span class="tag tag--accent">Shipped</span>
+              <span class="tag">UE4</span>
+              <span class="tag">Gameplay</span>
+            </div>
+            <span class="game-link">Gameplay ↗</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section id="case-studies" class="section">
+    <div class="container">
+      <h2 class="section-title">Selected <span class="accent">Case Studies</span></h2>
+      <p class="section-sub">A closer look at the problem, the approach, and the result behind three signature systems.</p>
+
+      <div class="case-grid">
+
+        <article class="case-card reveal">
+          <div class="case-media-placeholder">
+            <!-- TODO: replace with a screenshot or short GIF of the replication/physics debug view -->
+            <span class="mono">Add screenshot / GIF here</span>
+          </div>
+          <div class="case-body">
+            <h3 class="case-title">Kart Physics &amp; Multiplayer Replication</h3>
+            <p class="case-meta mono">Bamtang Games · DreamWorks All-Star Kart Racing</p>
+            <p class="case-field"><strong>Problem:</strong> A kart racer needed responsive, fair-feeling physics across up to 8 networked players without desync or rubber-banding, while giving designers a fast iteration loop.</p>
+            <p class="case-field"><strong>Approach:</strong> Built a specialised physics module and API on top of the engine, implemented client-side prediction with server reconciliation and interpolation for replication, and shipped internal debugging/trace tools so designers could inspect real gameplay data directly.</p>
+            <p class="case-field"><strong>Result:</strong> 20% reduction in kart-physics development time, 40% reduction in level-design iteration time, and stable 8-player replication shipped in DreamWorks All-Star Kart Racing.</p>
+            <div class="tag-row">
+              <span class="tag tag--accent">C++</span><span class="tag">Networking</span><span class="tag">Client Prediction</span><span class="tag">Physics</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card reveal">
+          <div class="case-media-placeholder">
+            <!-- TODO: replace with a screenshot or short GIF of the editor tools / UI work (mind Fortnite/Epic confidentiality) -->
+            <span class="mono">Add screenshot / GIF here</span>
+          </div>
+          <div class="case-body">
+            <h3 class="case-title">UE5 Source-Level Systems on a Live AAA Title</h3>
+            <p class="case-meta mono">Globant · Fortnite, in collaboration with Epic Games</p>
+            <p class="case-field"><strong>Problem:</strong> Two in-game features needed UI architecture that could hold up under Fortnite's real-time performance constraints, working directly against Unreal Engine 5 source rather than project-level scripting.</p>
+            <p class="case-field"><strong>Approach:</strong> Redesigned the UI architecture for both features and modified UE5 engine source directly across networking, rendering, and UI subsystems, working within Epic Games' collaboration process on a live, shipped title.</p>
+            <p class="case-field"><strong>Result:</strong> Two features shipped in Fortnite, with hands-on engine-source experience spanning three major subsystems rather than surface-level scripting.</p>
+            <div class="tag-row">
+              <span class="tag tag--accent">UE5 Source</span><span class="tag">Rendering</span><span class="tag">Networking</span><span class="tag">UI Arch</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="case-card reveal">
+          <a class="case-media-link" href="https://www.youtube.com/watch?v=x4T5kCNi0G8" target="_blank" rel="noopener" aria-label="Watch: The Rise of Hullstorm — Curly Engine early test on YouTube">
+            <img src="https://i.ytimg.com/vi/x4T5kCNi0G8/hqdefault.jpg" alt="The Rise of Hullstorm — Curly Engine early test, gameplay footage" loading="lazy" />
+            <span class="case-media-play">▶ Watch demo — “The Rise of Hullstorm”</span>
+          </a>
+          <div class="case-body">
+            <h3 class="case-title">Building an Engine From Scratch</h3>
+            <p class="case-meta mono">Personal project · Curly Engine &amp; HSGIL, since 2019</p>
+            <p class="case-field"><strong>Problem:</strong> Wanted to understand engine and rendering architecture from first principles, and give university classmates a lightweight engine they could actually ship games with.</p>
+            <p class="case-field"><strong>Approach:</strong> Designed Curly Engine's modular, block-customisable core with HSGIL as its OpenGL rendering foundation, built a full UI flow on top, and iterated the rendering mechanics over multiple years.</p>
+            <p class="case-field"><strong>Result:</strong> 30% decrease in rendering time after mechanics improvements to HSGIL; enabled 4+ classmates to ship indie titles ("TROH," "Potato Smash," a Volcano Simulation) for coursework, continuously maintained since 2019.</p>
+            <div class="tag-row">
+              <span class="tag tag--accent">C++</span><span class="tag">OpenGL</span><span class="tag">Engine Architecture</span><span class="tag">Rendering</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      <p class="section-sub">Open-source engines and graphics systems built from the ground up.</p>
+
+      <div class="projects-featured">
+
+        <div class="project-card project-card--hero reveal">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon">⚙️</div>
+              <div class="project-links">
+                <a href="https://github.com/AsulconS/Curly-Engine" target="_blank" rel="noopener" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Curly Engine</h3>
+            <p class="project-desc">
+              A fully custom C++ game engine with block-customizable core dependencies for lightweight shipping.
+              Uses HSGIL as its graphics foundation and implements a full UI flow. See the
+              <a href="#case-studies" class="inline-link">case study</a> above for the full architecture story.
+            </p>
+            <ul class="project-highlights">
+              <li>Enabled classmates to ship "TROH", "Potato Smash" &amp; "Volcano Simulations"</li>
+              <li>Lightweight, modular architecture designed for easy extension</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag tag--accent">C++</span><span class="tag">Game Engine</span><span class="tag">OpenGL</span><span class="tag">UI Systems</span>
+            </div>
+            <span class="project-date mono">2019 – Present</span>
+          </div>
+        </div>
+
+        <div class="project-card project-card--hero reveal">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon">🖥️</div>
+              <div class="project-links">
+                <a href="https://github.com/AsulconS/HSGIL" target="_blank" rel="noopener" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">HSGIL</h3>
+            <p class="project-sub mono">Handy Scalable Graphics Integration Library</p>
+            <p class="project-desc">
+              An open-source C++ graphics library focused on simple, scalable rendering — the rendering
+              backbone for Curly Engine. Used by university classmates for their final project games.
+            </p>
+            <ul class="project-highlights">
+              <li>30% decrease in rendering time after mechanics improvements</li>
+              <li>Enabled 4 students to ship games for "Software Engineering III" final projects</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag tag--accent">C++</span><span class="tag">Graphics</span><span class="tag">OpenGL</span><span class="tag">Rendering</span>
+            </div>
+            <span class="project-date mono">2019 – Present</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon">💧</div>
+              <div class="project-links">
+                <a href="https://github.com/AsulconS/SPH" target="_blank" rel="noopener" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">SPH Water Simulation</h3>
+            <p class="project-desc">Smoothed Particle Hydrodynamics implementation for real-time water simulation. Applied fluid dynamics mathematics to create convincing particle-based water behaviour.</p>
+            <div class="tag-row">
+              <span class="tag tag--accent">C++</span><span class="tag">Physics Sim</span><span class="tag">SPH</span><span class="tag">Fluid Dynamics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon">📐</div>
+              <div class="project-links">
+                <a href="https://github.com/AsulconS/SOD-Viewer" target="_blank" rel="noopener" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">SOD Viewer</h3>
+            <p class="project-desc">Graphical tool for visualizing Second Order Dynamics numerical approaches with real-time parameter adjustment. Built for understanding motion and interpolation maths.</p>
+            <div class="tag-row">
+              <span class="tag tag--accent">Python</span><span class="tag">Maths</span><span class="tag">Visualization</span><span class="tag">Dynamics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-inner">
+            <div class="project-header">
+              <div class="project-icon">🔍</div>
+              <div class="project-links">
+                <a href="https://github.com/AsulconS/CppScanner" target="_blank" rel="noopener" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">CppScanner</h3>
+            <p class="project-desc">Web application that scans images from photographs using the Harris Corner Detection Method, applying homography transformation for properly framed document output.</p>
+            <div class="tag-row">
+              <span class="tag tag--accent">C++</span><span class="tag">Computer Vision</span><span class="tag">Harris Method</span><span class="tag">Homography</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a Game Development Professional who started building a custom
+            <strong>Game Engine</strong> and <strong>Graphics Library</strong> in my second year of college
+            — and never stopped. That drive to go deep into core systems is what defines my career.
+          </p>
+          <p>
+            From shipping physics-driven kart racing games at <strong>Bamtang Games</strong>,
+            to contributing directly to <strong>Unreal Engine 5's source code</strong> at Globant
+            for Epic Games and a japanese company, I specialize in the hard technical layers most developers
+            never touch: rendering pipelines, network replication, editor tooling, and engine architecture.
+          </p>
+          <p>
+            I'm passionate about <strong>mathematics, physics simulation, and clean code</strong> —
+            the kind that other programmers are glad they inherited. I'm currently focused on
+            <strong>engine, gameplay-systems, and graphics programming</strong> roles.
+          </p>
+          <p>
+            Outside of work: strategy board games (Go, chess), MOBAs &amp; RTS, science fiction &amp;
+            fantasy literature, acoustic music performance, and hobbyist computational-science simulations.
+          </p>
+          <div class="about-links">
+            <a href="https://github.com/AsulconS" target="_blank" rel="noopener" class="pill-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/adrian-bedregal" target="_blank" rel="noopener" class="pill-link">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:adrian.r.bedregal@gmail.com" class="pill-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+          </div>
+        </div>
+        <div class="about-card-col">
+          <div class="info-card">
+            <div class="info-card-item">
+              <span class="info-label mono">Location</span>
+              <span>Moquegua, Perú</span>
+            </div>
+            <div class="info-card-item">
+              <span class="info-label mono">Availability</span>
+              <span>Remote (Worldwide) · Relocation Negotiable · Immediately Available</span>
+            </div>
+            <div class="info-card-item">
+              <span class="info-label mono">Primary Stack</span>
+              <span>C++ · UE5 · OpenGL · Rust</span>
+            </div>
+            <div class="info-card-item">
+              <span class="info-label mono">Specialization</span>
+              <span>Engine &amp; Graphics Programming</span>
+            </div>
+            <div class="info-card-item">
+              <span class="info-label mono">Education</span>
+              <span>B.Sc. Computer Science, UNSA · Expected 2026 (98% complete)</span>
+            </div>
+            <div class="info-card-item">
+              <span class="info-label mono">Languages</span>
+              <span>Spanish · English · Portuguese · Italian</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Tech <span class="accent">Stack</span></h2>
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">⚡</span> Languages
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill skill-pill--primary">C / C++ — 12 yrs</span>
+            <span class="skill-pill skill-pill--primary">Python — 6 yrs</span>
+            <span class="skill-pill">C# — 5 yrs</span>
+            <span class="skill-pill">Rust — 1 yr</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">🎮</span> Game Engines
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill skill-pill--primary">Unreal Engine 4</span>
+            <span class="skill-pill skill-pill--primary">Unreal Engine 5</span>
+            <span class="skill-pill">Bevy</span>
+            <span class="skill-pill">Curly Engine</span>
+            <span class="skill-pill">Unity</span>
+            <span class="skill-pill">Godot</span>
+            <span class="skill-pill">Raw C++ Engines</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">🖥️</span> Graphics &amp; Rendering
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill skill-pill--primary">OpenGL</span>
+            <span class="skill-pill skill-pill--primary">DirectX 11/12</span>
+            <span class="skill-pill">Vulkan</span>
+            <span class="skill-pill">GLSL</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">🔧</span> Unreal Engine
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill skill-pill--primary">C++ Programming</span>
+            <span class="skill-pill skill-pill--primary">Blueprint</span>
+            <span class="skill-pill">Networking &amp; Replication</span>
+            <span class="skill-pill">Editor Tools</span>
+            <span class="skill-pill">AI / Behavior Trees</span>
+            <span class="skill-pill">UI / UMG</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">📐</span> Programming &amp; Design
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Design Patterns</span>
+            <span class="skill-pill">Data Structures</span>
+            <span class="skill-pill">Algorithm Analysis</span>
+            <span class="skill-pill">Unit Testing</span>
+            <span class="skill-pill">Physics Simulation</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-icon">🗂️</span> Version Control
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill skill-pill--primary">Git</span>
+            <span class="skill-pill skill-pill--primary">Perforce</span>
+            <span class="skill-pill">Subversion</span>
+            <span class="skill-pill">Unity Version Control</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container container--narrow">
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <p class="section-sub">
+        Open to senior game programmer roles, engine development opportunities, and
+        interesting technical collaborations. Let's build something great.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:adrian.r.bedregal@gmail.com" class="contact-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span class="contact-card-label">Email</span>
+          <span class="contact-card-value mono">adrian.r.bedregal@gmail.com</span>
+        </a>
+        <a href="https://github.com/AsulconS" target="_blank" rel="noopener" class="contact-card reveal">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span class="contact-card-label">GitHub</span>
+          <span class="contact-card-value mono">AsulconS</span>
+        </a>
+        <a href="https://linkedin.com/in/adrian-bedregal" target="_blank" rel="noopener" class="contact-card reveal">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span class="contact-card-label">LinkedIn</span>
+          <span class="contact-card-value mono">adrian-bedregal</span>
+        </a>
+        <a href="Adrian%20Bedregal%20-%20Resume.pdf" download="Adrian Bedregal - Resume.pdf" class="contact-card reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span class="contact-card-label">Curriculum Vitae</span>
+          <span class="contact-card-value mono">Download PDF</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="mono">// Adrian Bedregal · <span id="year"></span></p>
+      <p class="footer-sub">Game Engine Developer · C++ Specialist · Unreal Engine Programmer</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
