@@ -273,6 +273,7 @@ strong { color: var(--text); font-weight: 600; }
   margin-bottom: .75rem;
 }
 .timeline-role { font-size: 1.15rem; font-weight: 700; }
+.timeline-note { font-size: .75rem; font-weight: 400; color: var(--text-dim); margin-left: .4rem; }
 .timeline-company { font-size: .95rem; font-weight: 500; }
 .timeline-meta { text-align: right; }
 .timeline-date { font-size: .8rem; color: var(--accent); display: block; }
@@ -496,7 +497,7 @@ strong { color: var(--text); font-weight: 600; }
 
 /* ===== CONTACT ===== */
 .contact-links {
-  display: grid; grid-template-columns: repeat(3, 1fr);
+  display: grid; grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem; margin-top: 3rem;
 }
 .contact-card {
