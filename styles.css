@@ -415,6 +415,7 @@ strong { color: var(--text); font-weight: 600; }
   border: 1px solid var(--border);
   overflow: hidden;
   transition: transform .25s, border-color .25s, box-shadow .25s;
+  color: inherit; text-decoration: none;
 }
 .game-card:hover {
   transform: translateY(-6px);
